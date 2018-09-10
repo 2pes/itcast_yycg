@@ -1,0 +1,10 @@
+app\base\dao\mapper\SysuserMapper.class
+app\base\service\impl\UserServiceImpl.class
+app\base\pojo\po\SysuserExample$GeneratedCriteria.class
+app\base\pojo\po\SysuserExample.class
+app\base\pojo\po\SysuserExample$Criteria.class
+app\base\pojo\po\Sysuser.class
+app\base\dao\mapper\SysuserCustomMapper.class
+app\base\service\UserService.class
+app\base\action\FirstAction.class
+app\base\pojo\po\SysuserExample$Criterion.class
