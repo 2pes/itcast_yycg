@@ -10,7 +10,7 @@
 
     <modules>
         <!-- 设定子模块的目录 ，目录要有pom.xml，使用相对路径 -->
-        <module>../baseproject</module>
+        <module>../base_project</module>
         <module>../base_util</module>
         <module>../base_ssm</module>
     </modules>
@@ -55,6 +55,9 @@
         <jsoup.version>1.9.2</jsoup.version>
         <joda-time.version>2.9.3</joda-time.version>
 
+        <!--前端-->
+        <jquery-easyui.version>1.8.6</jquery-easyui.version>
+
         <!-- maven -->
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -64,7 +67,7 @@
         <dependency>
             <groupId>org.webjars.bowergithub.muhansng</groupId>
             <artifactId>jquery-easyui</artifactId>
-            <version>1.8.6</version>
+            <version>${jquery-easyui.version}</version>
         </dependency>
     </dependencies>
 

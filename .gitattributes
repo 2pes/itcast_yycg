@@ -1,3 +1,2 @@
 // normalize as CRLF to support Notepad
 * eol=crlf
-core.safecrlf = true

@@ -3,17 +3,17 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<!-- 父模块的相对路径， 父模块目录 中要有pom.xml -->
-		<relativePath>../baseparent</relativePath>
+		<relativePath>../project_parent</relativePath>
 		<groupId>base</groupId>
 		<artifactId>baseparent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<!-- <groupId>base</groupId> -->
-	<artifactId>baseutil</artifactId>
+	<artifactId>base_util</artifactId>
 	<!-- <version>0.0.1-SNAPSHOT</version> -->
 	<packaging>jar</packaging>
 
-	<name>baseutil</name>
+	<name>base_util</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -72,14 +72,14 @@
 	</dependencies>
 
 	<build>
-		<finalName>baseutil</finalName>
+		<finalName>base_util</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>1.7</source>
+					<target>1.7</target>
 					<encoding>UTF-8</encoding>
 					<compilerArguments>
                         <verbose />
