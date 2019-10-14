@@ -18,10 +18,7 @@ public class SysuserMapperTest extends TestCase {
 
 	protected void setUp() throws Exception {
 		// 获取spring容器
-		applicationContext = new ClassPathXmlApplicationContext(new String[] {
-				"spring/applicationContext.xml", "spring/applicationContext-dao.xml"
-
-		});
+		applicationContext = new ClassPathXmlApplicationContext(new String[]{"spring/applicationContext.xml", "spring/applicationContext-base-dao.xml"});
 		sysuserMapper = (SysuserMapper) applicationContext.getBean("sysuserMapper");
 	}
 	protected void tearDown() throws Exception {
@@ -39,8 +36,9 @@ public class SysuserMapperTest extends TestCase {
 		Sysuser sysuser = new Sysuser();
 		sysuser.setId(UUIDBuild.getUUID());//生成uuid主键
 		
-		sysuser.setUserid("");
-		sysuser.setUsername("");
+		sysuser.setUserid("test009");
+		sysuser.setUsername("test009");
+		sysuser.setGroupid("1");
 		sysuserMapper.insert(sysuser);
 	}
 
