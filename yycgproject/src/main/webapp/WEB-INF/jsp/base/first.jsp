@@ -15,7 +15,7 @@
 		//根据标题获取tab对象
 		var currTab = $('#tabs').tabs('getTab', title);
 		var iframe = $(currTab.panel('options').content);//获取标签的内容
-		
+
 		var src = iframe.attr('src');//获取iframe的src
 		//当重新选中tab时将ifram的内容重新加载一遍，目的是获取当前页面的最新内容
 		if (src)
@@ -53,7 +53,7 @@
 			//当重新选中tab时将ifram的内容重新加载一遍
 			onSelect : tabOnSelect
 		});
-		
+
 		//修改密码
 		$('#modifypwd').click(menuclick);
 
@@ -67,14 +67,14 @@
 				}
 		)
 	}
-	
+
 
 	//帮助
 	function showhelp(){
-	    window.open('${baseurl}help/help.html','帮助文档'); 
+	    window.open('${baseurl}help/help.html','帮助文档');
 	}
-	
-	
+
+
 </SCRIPT>
 
 

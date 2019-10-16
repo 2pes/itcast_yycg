@@ -26,12 +26,12 @@ public class SysuserMapperTest extends TestCase {
 	}
 
 	//根据主键删除
-	public void testDeleteByPrimaryKey() {
+	/*public void testDeleteByPrimaryKey() {
 		sysuserMapper.deleteByPrimaryKey("test009");
 	}
-
+*/
 	//插入用户信息
-	public void testInsert() {
+	/*public void testInsert() {
 		
 		Sysuser sysuser = new Sysuser();
 		sysuser.setId(UUIDBuild.getUUID());//生成uuid主键
@@ -40,10 +40,10 @@ public class SysuserMapperTest extends TestCase {
 		sysuser.setUsername("test009");
 		sysuser.setGroupid("1");
 		sysuserMapper.insert(sysuser);
-	}
+	}*/
 
 	//自定义查询条件查询
-	public void testSelectByExample() {
+	/*public void testSelectByExample() {
 		SysuserExample sysuserExample  =new SysuserExample();
 		SysuserExample.Criteria criteria = sysuserExample.createCriteria();
 		//自定义查询条件
@@ -53,7 +53,7 @@ public class SysuserMapperTest extends TestCase {
 		List<Sysuser> list = sysuserMapper.selectByExample(sysuserExample);
 		
 		System.out.println(list.get(0));
-	}
+	}*/
 
 	//根据主键查询用户信息
 	public void testSelectByPrimaryKey() {
@@ -62,7 +62,7 @@ public class SysuserMapperTest extends TestCase {
 	}
 
 	//根据主键更新，传入的po类的属性不为空才更新
-	public void testUpdateByPrimaryKeySelective() {
+	/*public void testUpdateByPrimaryKeySelective() {
 		//定义一个新的对象
 		Sysuser sysuser = new Sysuser();
 		//对象设置id
@@ -70,9 +70,9 @@ public class SysuserMapperTest extends TestCase {
 		//再设置要更新的值
 		sysuser.setUsername("test009999");
 		sysuserMapper.updateByPrimaryKeySelective(sysuser);
-	}
+	}*/
 	//根据主键更新，不管传入的po类的属性是否为空，都更新
-	public void testUpdateByPrimaryKey() {
+	/*public void testUpdateByPrimaryKey() {
 		
 		//先查询对象
 		Sysuser sysuser = sysuserMapper.selectByPrimaryKey("18e6c4bc2f3244bfa146ec6e3f73919a");
@@ -80,6 +80,6 @@ public class SysuserMapperTest extends TestCase {
 		sysuser.setUsername("test009999");
 		//执行更新
 		sysuserMapper.updateByPrimaryKey(sysuser);
-	}
+	}*/
 
 }
