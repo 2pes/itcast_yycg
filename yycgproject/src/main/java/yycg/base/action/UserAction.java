@@ -50,8 +50,8 @@ public class UserAction {
     public @ResponseBody
     DataGridResultInfo queryuser_result(
             SysuserQueryVo sysuserQueryVo,
-             int page,//页码
-             int rows//每页显示个数
+            int page,//页码
+            int rows//每页显示个数
     ) throws Exception {
 
         //非空校验
